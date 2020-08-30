@@ -1,4 +1,4 @@
-FROM docker.pkg.github.com/SamKTaylor/InternalForms/dev_web:latest
+FROM docker.pkg.github.com/samktaylor/internalforms/dev_web:latest
 
 RUN rm -r /etc/nginx/sites-enabled
 COPY ./docker/nginx/sites-enabled-prod/* /etc/nginx/sites-enabled/
