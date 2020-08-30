@@ -9,9 +9,9 @@ jobs:
     steps:
     - uses: actions/checkout@master
 
-    - uses: actions/delete-package-versions@v1
-      with:
-        package-name: 'dev_web'
+    #- uses: actions/delete-package-versions@v1
+    #  with:
+    #    package-name: 'dev_web'
 
     # - uses: actions/delete-package-versions@v1
     #  with:
