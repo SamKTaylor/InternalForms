@@ -9,9 +9,9 @@ jobs:
     steps:
     - uses: actions/checkout@master
 
-    #- uses: actions/delete-package-versions@v1
-    #  with:
-    #    package-name: 'dev_web'
+    - uses: actions/delete-package-versions@v1
+      with:
+        package-name: 'dev_web'
 
     # - uses: actions/delete-package-versions@v1
     #  with:
@@ -34,6 +34,6 @@ jobs:
         password: ${{ github.token }}
         dockerfile: Dockerfile-prod
         registry: docker.pkg.github.com
-        repository: samktaylor/internalforms/dev_web
-        tags: "latest"
+        repository: samktaylor/internalforms/prod_web
+        tag_with_sha: true
 
